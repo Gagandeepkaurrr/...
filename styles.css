@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: papayawhip;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    color: #333;
+    animation: slideIn 1s ease-in-out;
+}
+
+.message {
+    color: #555;
+    margin: 20px 0;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.dad-photo {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: bounceIn 2s ease-in-out;
+}
+
+.forgive-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.forgive-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100px); }
+    to { transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+
+@keyframes bounceIn {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .message {
+        font-size: 16px;
+    }
+
+    .dad-photo {
+        width: 200px;
+    }
+
+    .forgive-button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
